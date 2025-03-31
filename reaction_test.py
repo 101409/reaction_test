@@ -1,8 +1,6 @@
 import pyautogui
 
-screenWidth, screenHeight = pyautogui.size()
-
-print("Checking color..")
+print("Checking color...")
 
 while True:
     currentMouseX, currentMouseY = pyautogui.position()
@@ -11,3 +9,4 @@ while True:
     if(r,g,b) == (75, 219, 106):
         pyautogui.click()
         print("Clicked!")
+        break
